@@ -9,6 +9,10 @@
       container {
         padding: 40px;
       }
+
+      .modal {
+        display: flex;
+ }
     </style>
     <link
       rel="stylesheet"
@@ -21,7 +25,14 @@
         <template slot="header"></template>
         <template slot="content"></template>
         <template slot="footer"></template>
-  
+        
+        <teste-view inline-template>
+            <div>
+            <h1>new number: {{ numero }}</h1>
+            
+            <p><button @click="numero += 1">update number: </button></p>
+        </div>
+        </teste-view>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
